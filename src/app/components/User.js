@@ -1,10 +1,12 @@
 import React from 'react';
 
-export const User = (props) =>{
-    return(
-        <div className='container'>
-        <h1>The User Page</h1>
-        User Name: 
-        </div>
-    )
+export class User extends React.Component {
+    render(){
+        return(
+            <div className='container'>
+            <h1>The User Page</h1>
+            User Name: {this.props.initialUserName}
+            </div>
+        )
+    }
 }
